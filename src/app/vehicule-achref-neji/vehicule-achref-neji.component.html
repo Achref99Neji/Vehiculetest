@@ -1,1 +1,6 @@
-<p>vehicule-achref-neji works!</p>
+<h2>Liste des véhicules</h2>
+<ul>
+  <li *ngFor="let v of vehicules">
+    {{ v.matricule }} - {{ v.marque }} - {{ v.description }}
+  </li>
+</ul>

@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { VehiculeService } from '../vehicule.service';
 import { Router } from '@angular/router';
-import { Vehicle } from '../models/vehicule.model';
+import { Vehicule  } from '../models/vehicule.model';
 
 @Component({
-  selector: 'app-add-vehicle-achref-neji',
-templateUrl: './add-vehicule-achref-neji.component.html',
+    selector: 'app-add-vehicule-achref-neji',
+  templateUrl: './add-vehicule-achref-neji.component.html',
 })
-export class AddVehicleAchrefNejiComponent {
+export class AddVehiculeAchrefNejiComponent {
   vehiculeForm: FormGroup;
 
   constructor(
@@ -27,8 +27,8 @@ export class AddVehicleAchrefNejiComponent {
 
   onSubmit() {
     if (this.vehiculeForm.valid) {
-const vehicle: Vehicle = this.vehiculeForm.value;
-      this.vehiculeService.addVehicle(vehicle).subscribe(() => {
+const vehicule: Vehicule  = this.vehiculeForm.value;
+      this.vehiculeService.addVehicule(vehicule).subscribe(() => {
         this.router.navigate(['/vehicules']); // redirige vers la liste
       });
     }

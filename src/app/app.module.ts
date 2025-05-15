@@ -7,9 +7,9 @@ import { VehiculeAchrefNejiComponent } from './vehicule-achref-neji/vehicule-ach
 import { NotFoundAchrefNejiComponent } from './not-found-achref-neji/not-found-achref-neji.component';
 import { VehiculeDetailsAchrefNejiComponent } from './vehicule-details-achref-neji/vehicule-details-achref-neji.component';
 import { NavbarAchrefNejiComponent } from './navbar-achref-neji/navbar-achref-neji.component';
-import { AddVehicleAchrefNejiComponent } from './add-vehicule-achref-neji/add-vehicule-achref-neji.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { AddVehiculeAchrefNejiComponent } from './add-vehicule-achref-neji/add-vehicule-achref-neji.component';
 
 
 @NgModule({
@@ -17,7 +17,7 @@ import { RouterModule } from '@angular/router';
     AppComponent,
     NavbarAchrefNejiComponent,
     VehiculeAchrefNejiComponent,
-    AddVehicleAchrefNejiComponent,
+    AddVehiculeAchrefNejiComponent,
     NotFoundAchrefNejiComponent,
     VehiculeDetailsAchrefNejiComponent
   ],

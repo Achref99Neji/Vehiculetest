@@ -1,4 +1,5 @@
 <h2>Ajouter un véhicule</h2>
+
 <form [formGroup]="vehiculeForm" (ngSubmit)="onSubmit()">
   <label>Matricule:</label>
   <input formControlName="matricule" />
@@ -20,12 +21,5 @@
   <input type="number" formControlName="nbrInteresse" />
   <br />
 
-  <button type="submit">Ajouter</button>
+  <button type="submit" [disabled]="vehiculeForm.invalid">Ajouter</button>
 </form>
-<p>TEST AFFICHAGE FORMULAIRE</p>
-<form [formGroup]="vehiculeForm" (ngSubmit)="onSubmit()">
-  <label>Matricule</label>
-  <input formControlName="matricule" />
-  <button type="submit">Ajouter</button>
-</form>
-
